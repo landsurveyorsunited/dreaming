@@ -1,0 +1,131 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width">
+
+	<script src="./jquery/jquery-1.9.1.min.js"></script>
+	<script src="./js/template-showcase.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='./css/template-showcase.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+<style>
+
+
+</style>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+    $(".tm-showcase").templateShowcase({
+	   //maxHeight:"550px",	
+		width:"100%",
+		slideWidth:400,
+		slideHeight:300,
+		mode:"concave", //concave or convex
+
+		visibleSlides:5, //3 or 5
+		useParallaxEffect:false,
+		useShadows:true,
+
+		backgroundColor:"#e2e2e2",
+		slideSpeed:"0.6s",
+		topMargin:50,
+		bottomMargin:50,
+
+		//custom settings
+		useAutomaticSettings:false,
+
+		centerSlideTranslateX:0,
+		centerSlideTranslateY:0,
+		centerSlideTranslateZ:0,
+
+		centerSlideRotateX:0,
+		centerSlideRotateY:0,
+		centerSlideRotateZ:0,
+
+		lrSlideTranslateX:350,
+		lrSlideTranslateY:0,
+		lrSlideTranslateZ:-300,
+
+		lrSlideRotateX:0,
+		lrSlideRotateY:30,
+		lrSlideRotateZ:0,
+
+		llrrSlideTranslateX:650,
+		llrrSlideTranslateY:0,
+		llrrSlideTranslateZ:-400,
+
+		llrrSlideRotateX:0,
+		llrrSlideRotateY:0,
+		llrrSlideRotateZ:0,
+
+		lmSlideTranslateX:750,
+		lmSlideTranslateY:0,
+		lmSlideTranslateZ:-700,
+
+		lmSlideRotateX:0,
+		lmSlideRotateY:0,
+		lmSlideRotateZ:0,
+
+	   //iconSize:"90px",
+
+	});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+
+	<div class="tm-showcase" >
+
+		<div class="tm-slide"
+		data-image="./images/slide1.jpg"
+		data-title="Fruit Basket"
+		data-description="Health Score (8/10)"
+		data-button-text="Buy Now!"
+		data-button-link="http://www.codehandling.com"
+		data-selected="true"
+		data-text-color="#000"
+		data-button-background-color="rgba(255,255,255,0.8)"></div>
+
+
+		<div class="tm-slide"
+		data-image="./images/slide2.jpg"></div>
+
+
+		<div class="tm-slide"
+		data-image="./images/slide3.jpg"></div>
+		
+		<div class="tm-slide"
+		data-image="./images/image1.jpg"></div>
+
+		<div class="tm-slide"
+		data-image="./images/image5.jpg"></div>
+
+		<div class="tm-slide"
+		data-image="./images/image6.jpg"></div>
+
+		<div class="tm-slide"
+		data-image="./images/panda.jpg"></div>
+
+
+
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>

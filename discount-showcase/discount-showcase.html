@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width">
+
+	<script src="./jquery/jquery-1.9.1.min.js"></script>
+	<script src="./js/discount-showcase.js"></script>
+
+	<link href='./css/discount-showcase.css' rel='stylesheet' type='text/css'>
+
+
+<style>
+
+
+</style>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+    $(".discount-showcase").discountShowcase({
+
+		width:"100%",
+		slideWidth:500,
+		slideHeight:300,
+		mode:"concave", //concave or convex
+
+		visibleSlides:3, //1 or 3 or 5
+		useParallaxEffect:false,
+		useShadows:true,
+
+		backgroundColor:"#FFF59D",
+		slideSpeed:"0.6s",
+		topSpacing:50,
+		bottomSpacing:50,
+
+		showControls:true,
+		controlShadowColor:"rgba(0, 0, 0, 0.62)",
+		controlActiveBackgroundColor:"red",
+		controlBoxShadowColor:"rgba(0, 0, 0, 0.62)",
+
+		//custom settings
+		useAutomaticSettings:true,
+
+	
+
+	});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+
+	<div class="discount-showcase" >
+
+		<div class="ds-slide"
+		data-image="./images/dota.jpg"
+		data-new-price="$20"
+		data-old-price="$30"
+		data-discount="-50%"
+		data-description="Dota 2"
+		data-link="http://themeforest.net/item/bridge-creative-multipurpose-wordpress-theme/7315054"
+		data-selected="true"
+		data-text-color="#fff"
+		data-text-background-color="rgba(0, 0, 0, 0.8)"></div>
+
+		<div class="ds-slide"
+		data-image="./images/ro2.jpg"
+		data-new-price="$40"
+		data-old-price="$80"
+		data-discount="-50%"
+		data-description="Ragnarok Online"
+		data-link="http://themeforest.net/item/foundry-multipurpose-html-variant-page-builder/11562108"
+		data-selected="false"
+		data-text-color="#fff"
+		data-text-background-color="rgba(0, 0, 0, 0.8)"></div>
+
+
+		<div class="ds-slide"
+		data-image="./images/tf3.png"
+		data-new-price="$25"
+		data-old-price="$30"
+		data-discount="-20%"
+		data-description="Team Fortress 2"
+		data-link="http://themeforest.net/item/fuse-angularjs-material-design-admin-template/12931855"
+		data-selected="false"
+		data-text-color="#fff"
+		data-text-background-color="rgba(0, 0, 0, 0.8)"></div>		
+
+		
+		<div class="ds-slide"
+		data-image="./images/coc2.jpg"
+		data-new-price="$20"
+		data-old-price="$30"
+		data-discount="-50%"
+		data-description="Clash Of Clans"
+		data-link="http://themeforest.net/item/conall-a-clean-beautiful-multipurpose-theme/15245311"
+		data-selected="false"
+		data-text-color="#fff"
+		data-text-background-color="rgba(0, 0, 0, 0.8)"></div>
+
+		
+		<div class="ds-slide"
+		data-image="./images/fifa3.jpg"
+		data-new-price="$20"
+		data-old-price="$30"
+		data-discount="-40%"
+		data-description="Fifa 2016"
+		data-link="http://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048"
+		data-selected="false"
+		data-text-color="#fff"
+		data-text-background-color="rgba(0, 0, 0, 0.8)"></div>
+
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>

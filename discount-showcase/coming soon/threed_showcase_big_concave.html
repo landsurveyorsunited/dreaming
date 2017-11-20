@@ -1,0 +1,105 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width">
+
+	<script src="./jquery/jquery-1.9.1.min.js"></script>
+	<script src="./js/threed-showcase.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='./css/threed-showcase.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet' type='text/css'>
+
+
+<style>
+
+
+</style>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+    $(".td-showcase").threedShowcase({
+	   //maxHeight:"550px",	
+		width:"100%",
+		slideWidth:500,
+		slideHeight:400,
+		mode:"concave", //concave or convex
+
+		visibleSlides:3, //3 or 5
+		useParallaxEffect:false,
+		useShadows:true,
+
+		backgroundColor:"#e2e2e2",
+		slideSpeed:"0.6s",
+		topMargin:50,
+		bottomMargin:50,
+
+		showControls:true,
+		controlShadowColor:"rgba(0, 0, 0, 0.62)",
+		controlActiveBackgroundColor:"#FFEB3B",
+		controlBoxShadowColor:"rgba(0, 0, 0, 0.62)",
+
+		//custom settings
+		useAutomaticSettings:true,
+
+		
+
+	});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+
+	<div class="td-showcase" >
+
+		<div class="td-slide"
+		data-image="./images/slide1.jpg"
+		data-title="Fruit Basket"
+		data-description="Health Score (8/10)"
+		data-button-text="Buy Now!"
+		data-button-link="http://www.codehandling.com"
+		data-selected="true"
+		data-text-color="#000"
+		data-button-background-color="rgba(255,255,255,0.8)"></div>
+
+
+		<div class="td-slide"
+		data-image="./images/slide2.jpg"></div>
+
+
+		<div class="td-slide"
+		data-image="./images/slide3.jpg"></div>
+		
+		<div class="td-slide"
+		data-image="./images/image1.jpg"></div>
+
+		<div class="td-slide"
+		data-image="./images/image5.jpg"></div>
+
+		<div class="td-slide"
+		data-image="./images/image6.jpg"></div>
+
+		<div class="td-slide"
+		data-image="./images/panda.jpg"></div>
+
+
+
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>
