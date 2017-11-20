@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Droid+Serif:400italic|Roboto+Condensed");
+@import url("./font-awesome/css/font-awesome.min.css");
+
+.limited-products-showcase {
+    width: 100%;
+    background-color: #bcefeb;
+    height: 650px;
+    overflow:hidden;
+}
+
+.lps-slide-wrapper {
+    /*width: 400px;*/
+    width: 49%;
+    float: right;
+    height: 400px;
+    position: relative;
+    overflow: visible;
+    margin: 0px auto;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    top: -190px;
+    left: 60px;
+}
+
+.lps-slide {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: rotateY(-25deg) translateY(300px);
+    -webkit-transform: rotateY(-25deg) translateY(300px);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    border-spacing:0;
+    cursor: pointer;
+}
+
+
+.lps-slide:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.29);
+    background: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.29),rgba(255,255,255,0));
+    background: -webkit-radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.29),rgba(255,255,255,0));
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 20px;
+    left: 0px;
+}
+
+
+.lps-text-wrapper {
+    width: 49%;
+    float: left;
+    height: 100%;
+    position: relative;
+
+    background-position: center;
+    background-size: auto;
+}
+
+.lps-text-section {
+    position: absolute;
+    top: 47%;
+    transform: translate(0px,-50%);
+    -webkit-transform: translate(0px,-50%);
+    display: inline-block;
+    text-align: right;
+    margin: 0px 70px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(to right,rgba(255,255,255,0),rgb(255, 255, 255) 34%);
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0),rgb(255, 255, 255) 34%);
+    max-width: 500px;
+    right: 3%;
+}
+
+.lps-title {
+    font-size: 40px;
+    font-family: "Poiret One";
+    font-weight: bold;
+}
+
+.lps-description {
+    padding-top: 16px;
+    font-family: "Droid Serif";
+    color: #282828;
+    font-size: 15px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+.lps-button {
+    display: inline-block;
+    /*background-color: #662966;*/
+    background-color: #333333;
+    padding: 8px 14px;
+    margin-top: 20px;
+    font-family: "Roboto Condensed";
+    color: #f0f8ff;
+    box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 8px 8px -2px rgba(0,0,0,0.5);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.lps-handle-wrapper {
+    width: 2%;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+
+/*
+.lps-handle-section {
+    position: absolute;
+    top: 50%;
+    transform: translate(0px,-50%);
+    display: inline-block;
+}
+
+.lps-handle {
+    width: 10px;
+    height: 10px;
+    background-color: #fffbff;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+    margin: 15px 0px;
+}*/
+
+.lps-handle-section {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    display: block;
+    background: #649c98;
+    background: radial-gradient(ellipse farthest-side, #649c98, rgba(255,255,255,0));
+    background: -webkit-radial-gradient(ellipse farthest-side, #649c98, rgba(255,255,255,0));
+    border-radius: 30px;
+    padding: 35px 0px;
+    width: 3px;
+}
+
+
+.lps-handle {
+    width: 7px;
+    height: 7px;
+    background-color: #fffbff;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 5px 2px #649c98;
+    cursor: pointer;
+    margin: 36px 7px;
+    position: relative;
+    left: -9px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.lps-handle.selected{
+    width: 15px;
+    height: 15px;
+    left: -13px;
+    box-shadow: 0px 0px 5px 2px #649c98;
+}
+
+.lps-note {
+    margin-top: 20px;
+    color: red;
+    font-family: "Droid Serif";
+    font-size: 13px;
+    display: none;
+}
+
+.lps-description span {
+
+    color: red;
+        /*display: inline-block;*/
+        font-size: 13px;
+}
+
+@media all and (min-width: 1600px) {
+
+    .lps-description {
+    font-size: 18px;
+    line-height: 26px;
+    }
+
+    .lps-description span {
+        font-size: 15px;
+    }
+
+    .lps-title {
+    font-size: 42px;
+    }
+
+    .lps-button {
+    font-size: 20px;
+    }
+
+}
+
+
+@media all and (max-width: 1200px) , screen and (max-device-width: 1200px) {
+
+.lps-slide-wrapper {
+    left: 10px;
+}
+
+.lps-text-section {
+    margin: 0px 30px;
+}
+
+.lps-handle-wrapper {
+}
+
+.lps-title {
+    font-size: 36px;
+}
+
+}
+
+
+@media all and (min-width: 950px) {
+
+    .lps-text-wrapper {
+        background-image: none !important;
+    }
+
+}
+
+@media all and (max-width: 950px) , screen and (max-device-width: 950px) {
+
+    .lps-text-wrapper {
+        width: 86%;
+    }
+
+    .lps-text-section {
+        margin: 0px 10%;
+        background: rgba(255, 255, 255, 0.9);
+        background: linear-gradient(to right,rgba(255,255,255,0),rgba(255, 255, 255, 0.9)  34%);
+        background: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255, 255, 255, 0.9)  34%);
+    }
+
+    .lps-slide-wrapper {
+        display: none;
+    }
+
+    .lps-handle-wrapper {
+        width: 14%;
+        background-color: rgba(255, 255, 255, 0.83);
+    }
+
+    .lps-title {
+        font-size: 45px;
+    }
+
+    .lps-description {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    
+    .lps-description span {
+        font-size: 15px;
+    }
+
+    .lps-handle.selected {
+    width: 21px;
+    height: 21px;
+    left: -16px;
+    }
+
+    .lps-handle {
+    width: 11px;
+    height: 11px;
+    left: -11px;
+    }
+
+}
+
+
+@media all and (max-width: 550px) , screen and (max-device-width: 550px) {
+
+    .lps-handle.selected {
+        width: 15px;
+    height: 15px;
+    left: -13px;
+    }
+
+    .lps-handle {
+    width: 7px;
+    height: 7px;
+    left: -9px;
+    }
+
+}

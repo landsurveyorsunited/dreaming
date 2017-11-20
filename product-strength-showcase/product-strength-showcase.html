@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width">
+
+	<script src="./jquery/jquery-1.9.1.min.js"></script>
+	<script src="./js/product-strength-showcase.js"></script>
+
+	<link href='./css/product-strength-showcase.css' rel='stylesheet' type='text/css'>
+
+
+<style>
+
+
+</style>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+    $(".product-showcase").productStrengthShowcase({
+	   //maximum height of the showcase
+	   maxHeight:"700px",
+	   //width of the showcase
+	   width:"100%",
+	   //navigation icon size
+	   iconSize:"90px"
+	});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+
+	<div class="product-showcase">
+
+		<div class="pss-icon"
+		data-icon="./images/icon1.jpg"
+		data-image="./images/berry.jpg"
+		data-title="Fruit Basket"
+		data-description="health score"
+		data-button-text="Learn More"
+		data-button-link="http://www.codehandling.com"
+		data-selected="false"
+		data-align="left"
+		data-text-color="white"
+		data-statistic-icon="fa-glass"
+		data-statistic-count="7"
+		data-statistic-check-color="#c0cebf"
+		data-statistic-uncheck-color="rgba(170, 158, 150, 0.39)"
+		data-statistic-background-color="rgb(2, 25, 23)"
+		data-statistic-count-color="#c0cebf"
+		data-text-background-color="rgba(244, 67, 54, 0.85)"
+		data-icon-highlight-color="white"></div>
+
+
+		<div class="pss-icon"
+		data-icon="./images/icon2.jpg"
+		data-image="./images/radish.jpg"
+		data-title="Vegetable Basket"
+		data-description="health score"
+		data-button-text="Learn More"
+		data-button-link="http://www.codehandling.com"
+		data-selected="true"
+		data-align="right"
+		data-text-color="#302f2e"
+		data-statistic-icon="fa-glass"
+		data-statistic-count="8"		
+		data-statistic-check-color="green"
+		data-statistic-uncheck-color="rgba(255,255,255,0.1)"
+		data-statistic-background-color="rgba(0,0,0,0.8)"
+		data-statistic-count-color="whitesmoke"
+		data-text-background-color="rgba(254,254,254,0.85)"
+		data-icon-highlight-color="white"></div>
+
+
+		<div class="pss-icon"
+		data-icon="./images/icon3.jpg"
+		data-image="./images/burger.jpg"
+		data-title="Burger Box"
+		data-description="health score"
+		data-button-text="Learn More"
+		data-button-link="http://www.codehandling.com"
+		data-selected="false"
+		data-align="right"
+		data-text-color="#3b4b6c"
+		data-statistic-icon="fa-glass"
+		data-statistic-count="5"
+		data-statistic-check-color="#3b4b6c"
+		data-statistic-uncheck-color="rgba(0,0,0,0.1)"
+		data-statistic-background-color="rgba(255,255,255,0.85)"
+		data-statistic-count-color="black"
+		data-text-background-color="rgba(255, 193, 7, 0.9)"		
+		data-icon-highlight-color="white"></div>
+
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>
