@@ -1,0 +1,83 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width">
+
+	<script src="./jquery/jquery-1.9.1.min.js"></script>
+	<script src="./js/impact-showcase.js"></script>
+
+
+	<link href='./css/impact-showcase.css' rel='stylesheet' type='text/css'>
+
+
+<style>
+
+
+
+</style>
+
+
+<script type="text/javascript">
+$(window).load(function(){
+
+
+    $(".impact-showcase").impactShowcase({
+		height:"700px",	
+		width:"100%",
+		filter:["saturate","zoom","blur"],
+		//zoom|blur|gray|hue|sepia|brightness|saturate|opacity
+
+		touchMode:null,
+
+		blurMaximum:0, //higher the number, higher the blur. Range can be 1 to 20
+		//0=automatic setting for blur
+
+		brightnessMinimum:70, //brightness at the edges
+		brightnessMaximum:30, //brightness at the center
+
+		saturationMinimum:0, //saturation at the edges
+		saturationMaximum:250, //saturation at the center
+
+		opacityMinimum:60, //opacity at the edges
+		opacityMaximum:100, //opacity at the center
+
+
+	});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div style="height:500px;"></div>
+
+	<div class="impact-showcase" 
+	data-description="WITH MALAYSIA"
+	data-title="Fall in Love"
+	data-image="./images/come.jpg"
+	data-link="http://www.codehandling.com">
+	</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<script>
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
